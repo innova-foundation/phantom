@@ -1,4 +1,9 @@
+[![Travis](https://img.shields.io/travis/carsenk/phantom.svg?style=flat-square)](https://travis-ci.org/carsenk/phantom)
+[![Go Report Card](https://goreportcard.com/badge/github.com/carsenk/phantom?style=flat-square)](https://goreportcard.com/report/github.com/carsenk/phantom)
+
 # Phantom-node Daemon
+
+![Phantom Logo](./phantomlogo.png)
 
 Phantom nodes requires no static IP address, no copy of the blockchain, and no proof-of-service. As such, you can run a node on any IP address of your liking: `1.1.1.1` or `8.8.8.8` if you wish. Phantoms also support live hot-swap with currently running nodes, there is no need to re-queue.
 
@@ -57,9 +62,9 @@ That's it. You do not need to restart your masternodes, you don't need to change
 * [Windows AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-windows-amd64.exe)
 * [Linux AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-amd64)
 * [OSX AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-darwin-amd64)
-* [ARMv7 (Modern ARM Arch)](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-arm)
-* [ARMv6 (Usually for Raspberry Pi Arch)] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv6)
-* [ARMv5 (Usually for Raspberry Pi Arch)] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv5)
+* [ARMv7 Linux](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-arm)
+* [ARMv6 Pi] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv6)
+* [ARMv5 Pi] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv5)
 
 # Setup 
 
