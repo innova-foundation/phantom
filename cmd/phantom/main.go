@@ -34,6 +34,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
+	"github.com/carsenk/phantom/pkg/storage"
 	"log"
 	"github.com/carsenk/phantom/pkg/socket/wire"
 	"github.com/carsenk/phantom/pkg/phantom"
