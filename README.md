@@ -63,8 +63,8 @@ That's it. You do not need to restart your masternodes, you don't need to change
 * [Linux AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-amd64)
 * [OSX AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-darwin-amd64)
 * [ARMv7 Linux](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-arm)
-* [ARMv6 Pi] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv6)
-* [ARMv5 Pi] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv5)
+* [ARMv6 Pi](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv6)
+* [ARMv5 Pi](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv5)
 
 # Setup 
 
@@ -178,9 +178,13 @@ docker run --rm -it -v "$PWD":/go/src/phantom -w /go/src/phantom golang:1.12.4 .
 
 ## Donation Addresses
 breakcrypto:
+
 BTC: 151HTde9NgwbMMbMmqqpJYruYRL4SLZg1S
+
 LTC: LhBx1TUyp7wiYuMxjefAGUGZVzuHRtPBA7
+
 DOGE: DBahutcjEAxfwQEW7kzft2y8dhZN2VtcG5
 
 carsenk:
+
 D: DMciTRDMZzcL48JoB1NJu5vhMkVuJLxhJe
