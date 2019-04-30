@@ -54,10 +54,12 @@ That's it. You do not need to restart your masternodes, you don't need to change
 
 # Downloads
 
-* [Windows](https://github.com/breakcrypto/phantom/releases/download/v0.0.4/phantom-windows-amd64.exe)
-* [Linux](https://github.com/breakcrypto/phantom/releases/download/v0.0.4/phantom-linux-amd64)
-* [OSX](https://github.com/breakcrypto/phantom/releases/download/v0.0.4/phantom-darwin-amd64)
-* [ARM](https://github.com/breakcrypto/phantom/releases/download/v0.0.4/phantom-linux-arm)
+* [Windows AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-windows-amd64.exe)
+* [Linux AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-amd64)
+* [OSX AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-darwin-amd64)
+* [ARMv7 (Modern ARM Arch)](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-arm)
+* [ARMv6 (Usually for Raspberry Pi Arch)] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv6)
+* [ARMv5 (Usually for Raspberry Pi Arch)] (https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv5)
 
 # Setup 
 
