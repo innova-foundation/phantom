@@ -35,8 +35,8 @@ import (
 	"fmt"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"log"
-	"github.com/breakcrypto/phantom/pkg/socket/wire"
-	"github.com/breakcrypto/phantom/pkg/phantom"
+	"github.com/carsenk/phantom/pkg/socket/wire"
+	"github.com/carsenk/phantom/pkg/phantom"
 	"strconv"
 	"sync"
 	"time"
@@ -88,7 +88,7 @@ func main() {
 	flag.StringVar(&sentinelString, "sentinel_version", "", "The string to use for the sentinel version number (i.e. 1.20.0)")
 	flag.StringVar(&daemonString, "daemon_version", "", "The string to use for the sentinel version number (i.e. 1.20.0)")
 
-	flag.StringVar(&userAgent, "user_agent", "@_breakcrypto phantom", "The user agent string to connect to remote peers with.")
+	flag.StringVar(&userAgent, "user_agent", "@_carsenk phantom", "The user agent string to connect to remote peers with.")
 
 
 	flag.Parse()
@@ -127,7 +127,7 @@ func main() {
 			if daemonString == "" {
 				daemonString = coinInfo.DaemonVersion
 			}
-			if userAgent == "@_breakcrypto phantom" && coinInfo.UserAgent != "" {
+			if userAgent == "@_carsenk phantom" && coinInfo.UserAgent != "" {
 				userAgent = coinInfo.UserAgent
 			}
 		}
