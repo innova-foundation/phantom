@@ -55,9 +55,12 @@ var sentinelVersion uint32
 var daemonVersion uint32
 var masternodeConf string
 var coinCon phantom.CoinConf
+var dbPath string
 var userAgent string
 
-const VERSION = "0.0.4"
+var cachedPeers error
+
+const VERSION = "0.0.4.2"
 
 func main() {
 
@@ -90,6 +93,7 @@ func main() {
 
 	flag.StringVar(&userAgent, "user_agent", "@_carsenk phantom", "The user agent string to connect to remote peers with.")
 
+	flag.StringVar(&dbPath, "db_path", "./peers.db", "The destination for database storage.")
 
 	flag.Parse()
 
@@ -129,6 +133,9 @@ func main() {
 			}
 			if userAgent == "@_carsenk phantom" && coinInfo.UserAgent != "" {
 				userAgent = coinInfo.UserAgent
+			}
+			if dbPath == "" {
+				dbPath = "peers.db"
 			}
 		}
 	}
@@ -228,6 +235,15 @@ func main() {
 	fmt.Println("Daemon Version: ", daemonVersion)
 	fmt.Println("\n\n")
 
+	db, err := storage.InitialiseDB("peers.db")
+	if err != nil {
+		log.Fatal("An error occurred initialising the database")
+	} else {
+		log.Println("Database was initialised:", db)
+	}
+
+	cachedPeers = storage.LoadPeersFromDB(db)
+
 	for _, ip := range peerSet {
 		//make the ping channel
 		pingChannel := make(chan phantom.MasternodePing, 1500)
@@ -291,6 +307,11 @@ func processNewHashes(hashChannel chan chainhash.Hash, queue *phantom.Queue) {
 }
 
 func processNewAddresses(addrChannel chan wire.NetAddress, peerSet map[string]wire.NetAddress) {
+	// Cache peers
+	db, err := storage.InitialiseDB("peers.db")
+	if err != nil {
+		log.Fatal(err)
+	}
 	for {
 		addr := <-addrChannel
 
@@ -299,6 +320,7 @@ func processNewAddresses(addrChannel chan wire.NetAddress, peerSet map[string]wi
 		}
 
 		peerSet[addr.IP.String()] = addr
+		err = storage.CachePeerToDB(db, addr.IP.String())
 	}
 }
 
@@ -310,8 +332,7 @@ func getNextPeer(connectionSet map[string]*phantom.PingerConnection, peerSet map
 
 			//remove the peer from the connection list
 			delete(peerSet, peer)
-
-			log.Println("Found new peer: ", peer)
+ 			log.Println("Found new peer: ", peer)
 
 			return returnValue, nil
 		}

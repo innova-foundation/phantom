@@ -6,6 +6,13 @@ The phantom daemon is extremely lightweight allowing you to run hundreds of node
 
 The phantom daemon is custom built wallet designed to replicate only what is required for pre-EVO masternodes to run; it replaces the masternode daemon piece. It does not handle any wallet private keys and has no access to your coins. You will still need a wallet to start your masternodes, but once started, the phatom node system will handle the rest for you.
 
+## Updated
+Phantom v0.0.4.2
+Original Dev breakcrypto, modified by carsenk
+
+- Added Denarius (D) Support
+- Added peer caching to peers.db
+
 ## Contact information
 
 * email: breakcrypto@gmail.com
@@ -15,8 +22,6 @@ The phantom daemon is custom built wallet designed to replicate only what is req
 * bitcoin talk discussion: https://bitcointalk.org/index.php?topic=5136453.0
 
 ## Donation Addresses
-D: DMciTRDMZzcL48JoB1NJu5vhMkVuJLxhJe
-
 BTC: 151HTde9NgwbMMbMmqqpJYruYRL4SLZg1S
 
 LTC: LhBx1TUyp7wiYuMxjefAGUGZVzuHRtPBA7
@@ -58,11 +63,11 @@ That's it. You do not need to restart your masternodes, you don't need to change
 
 # Setup 
 
-The setup is simple: copy your masternode.conf, modify it slightly, launch the phantom executable.
+The setup is simple: copy your masternode.conf or fortunastake.conf, modify it slightly, launch the phantom executable.
 
 ## Masternode.txt setup
 
-Copy your masternode.conf to the same folder as the phantom executable. Rename it to masternode.txt. Remove any comment lines from the top of the file (i.e. delete any line starting with #). At the end of each line add a epoch time ( https://www.unixtimestamp.com ). The epoch timestamp is utilized to allow you to run multiple phantom node setups in a deterministic manner, creating a highly-available configuration.
+Copy your masternode.conf or fortunastake.conf to the same folder as the phantom executable. Rename it to masternode.txt. Remove any comment lines from the top of the file (i.e. delete any line starting with #). At the end of each line add a epoch time ( https://www.unixtimestamp.com ). The epoch timestamp is utilized to allow you to run multiple phantom node setups in a deterministic manner, creating a highly-available configuration.
 
 **Example**
 
@@ -156,6 +161,8 @@ There is a coinconf generator included that can auto-generate settings for most 
     	The string to use for the sentinel version number (i.e. 1.20.0) (default "0.0.0")
   -user_agent
       The user agent string to connect to remote peers with.
+  -db_path
+      The destination for database storage (default path is ./peers.db)
 ```
 
 ## Building (using Docker)
