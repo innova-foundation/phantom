@@ -2,6 +2,3 @@
 **/.DS_Store
 peers.db
 masternode.conf
-*.zip
-*.exe
-src
