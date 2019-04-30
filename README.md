@@ -15,6 +15,8 @@ The phantom daemon is custom built wallet designed to replicate only what is req
 * bitcoin talk discussion: https://bitcointalk.org/index.php?topic=5136453.0
 
 ## Donation Addresses
+D: DMciTRDMZzcL48JoB1NJu5vhMkVuJLxhJe
+
 BTC: 151HTde9NgwbMMbMmqqpJYruYRL4SLZg1S
 
 LTC: LhBx1TUyp7wiYuMxjefAGUGZVzuHRtPBA7
@@ -88,6 +90,7 @@ comments removed, epoch timestamp added to the end.
 
 ## Coin configurations exist for
 
+* D
 * $PAC
 * ANDS
 * BEET 
