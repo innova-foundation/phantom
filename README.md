@@ -15,18 +15,16 @@ Original Dev breakcrypto, modified by carsenk
 
 ## Contact information
 
+* email: admin@denarius.io
+* twitter: https://twitter.com/carsenjk
+* discord: Carsen#3333
+* Discord Chat: https://discord.gg/UPpQy3n
+
 * email: breakcrypto@gmail.com
 * twitter: https://twitter.com/_breakcrypto
 * discord: breakcrypto#0011
 * discord channel: https://discord.gg/fQPb2ew
 * bitcoin talk discussion: https://bitcointalk.org/index.php?topic=5136453.0
-
-## Donation Addresses
-BTC: 151HTde9NgwbMMbMmqqpJYruYRL4SLZg1S
-
-LTC: LhBx1TUyp7wiYuMxjefAGUGZVzuHRtPBA7
-
-DOGE: DBahutcjEAxfwQEW7kzft2y8dhZN2VtcG5
 
 # Feature
 
@@ -95,7 +93,7 @@ comments removed, epoch timestamp added to the end.
 
 ## Coin configurations exist for
 
-* D
+* D (Denarius)
 * $PAC
 * ANDS
 * BEET 
@@ -170,3 +168,12 @@ There is a coinconf generator included that can auto-generate settings for most 
 ```
 docker run --rm -it -v "$PWD":/go/src/phantom -w /go/src/phantom golang:1.12.4 ./build.sh 
 ```
+
+## Donation Addresses
+breakcrypto:
+BTC: 151HTde9NgwbMMbMmqqpJYruYRL4SLZg1S
+LTC: LhBx1TUyp7wiYuMxjefAGUGZVzuHRtPBA7
+DOGE: DBahutcjEAxfwQEW7kzft2y8dhZN2VtcG5
+
+carsenk:
+D: DMciTRDMZzcL48JoB1NJu5vhMkVuJLxhJe
