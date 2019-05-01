@@ -95,7 +95,7 @@ comments removed, epoch timestamp added to the end.
 ## Run the phantom executable
 
 ```
-./phantom -magicbytes="E4D2411C" -port=1929 -protocol_number=70209 -magic_message="ProtonCoin Signed Message:" -bootstrap_ips="51.15.236.48:1929" -bootstrap_url="http://explorer.anodoscrypto.com:3001" -max_connections=10
+./phantom-linux-amd64 -magicbytes="b4eff2fa" -port=33369 -protocol_number=33500 -magic_message="Denarius Signed Message:" -bootstrap_url="https://denarius.pro" -max_connections=150 -bootstrap_ips="140.82.16.72:33369"
 ```
 
 ## Coin configurations exist for
@@ -167,7 +167,7 @@ There is a coinconf generator included that can auto-generate settings for most 
   -user_agent
       The user agent string to connect to remote peers with.
   -db_path
-      The destination for database storage (default path is ./peers.db)
+      The destination for peer database storage (default path is ./peers.db)
 ```
 
 ## Building (using Docker)
