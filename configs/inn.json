@@ -1,0 +1,8 @@
+{"name":"Innova",
+  "magicbytes":"b73ff4fa",
+  "port":14530,
+  "protocol_number":43510,
+  "magic_message":"Innova Signed Message:",
+  "magic_message_newline":true,
+  "bootstrap_url":"https://innovacoin.io",
+  "bootstrap_ips":"140.82.25.108:14530"}

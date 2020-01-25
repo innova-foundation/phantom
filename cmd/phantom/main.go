@@ -34,10 +34,10 @@ import (
 	"flag"
 	"fmt"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/carsenk/phantom/pkg/storage"
+	"github.com/innova-foundation/phantom/pkg/storage"
 	"log"
-	"github.com/carsenk/phantom/pkg/socket/wire"
-	"github.com/carsenk/phantom/pkg/phantom"
+	"github.com/innova-foundation/phantom/pkg/socket/wire"
+	"github.com/innova-foundation/phantom/pkg/phantom"
 	"strconv"
 	"sync"
 	"time"
@@ -92,7 +92,7 @@ func main() {
 	flag.StringVar(&sentinelString, "sentinel_version", "", "The string to use for the sentinel version number (i.e. 1.20.0)")
 	flag.StringVar(&daemonString, "daemon_version", "", "The string to use for the sentinel version number (i.e. 1.20.0)")
 
-	flag.StringVar(&userAgent, "user_agent", "@_carsenk phantom", "The user agent string to connect to remote peers with.")
+	flag.StringVar(&userAgent, "user_agent", "@_circuitbreaker phantom", "The user agent string to connect to remote peers with.")
 
 	flag.StringVar(&dbPath, "db_path", "./peers.db", "The destination for database storage.")
 
@@ -132,7 +132,7 @@ func main() {
 			if daemonString == "" {
 				daemonString = coinInfo.DaemonVersion
 			}
-			if userAgent == "@_carsenk phantom" && coinInfo.UserAgent != "" {
+			if userAgent == "@_circuitbreaker phantom" && coinInfo.UserAgent != "" {
 				userAgent = coinInfo.UserAgent
 			}
 			if dbPath == "" {

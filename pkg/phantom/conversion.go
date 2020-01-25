@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"github.com/carsenk/phantom/pkg/socket/wire"
+	"github.com/innova-foundation/phantom/pkg/socket/wire"
 )
 
 func ConvertVersionStringToInt(str string) uint32 {

@@ -1,5 +1,5 @@
-[![Travis](https://img.shields.io/travis/carsenk/phantom.svg?style=flat-square)](https://travis-ci.org/carsenk/phantom)
-[![Go Report Card](https://goreportcard.com/badge/github.com/carsenk/phantom?style=flat-square)](https://goreportcard.com/report/github.com/carsenk/phantom)
+[![Travis](https://img.shields.io/travis/innova-foundation/phantom.svg?style=flat-square)](https://travis-ci.org/innova-foundation/phantom)
+[![Go Report Card](https://goreportcard.com/badge/github.com/innova-foundation/phantom?style=flat-square)](https://goreportcard.com/report/github.com/innova-foundation/phantom)
 
 # Phantom-node Daemon
 
@@ -13,9 +13,9 @@ The phantom daemon is custom built wallet designed to replicate only what is req
 
 ## Updated
 Phantom v0.0.4.2
-Original Dev breakcrypto, modified by carsenk
+Original Dev breakcrypto, modified by carsenk & CircuitBreaker
 
-- Added Denarius (D) Support
+- Added Innova (INN) Support
 - Added peer caching to peers.db
 
 ## Contact information
@@ -37,7 +37,7 @@ Original Dev breakcrypto, modified by carsenk
 * Minimal memory and disk usage (in the 10s of megabytes vs. gigabytes)
 * Hot-swap with live node daemons, no restart required
 * Select any IP address, no static IP required
-* Auto-load settings from a coinconf.json 
+* Auto-load settings from a coinconf.json
 * Optionally auto-load bootstrap hashes and peers from Iquidus explorers (more APIs coming soon)
 * Epoch timestamp support for high-availability deterministic pings
 * Use your existing masternode.conf if you don't want deterministic pings
@@ -45,7 +45,7 @@ Original Dev breakcrypto, modified by carsenk
 
 # A note from the developer
 
-Phantoms have been released to make it easier, and less costly, for masternode supporters to host their own nodes. Masternode hosting companies are free to utilize the phantom system as long as they comply with the terms of the Server Side Public License. 
+Phantoms have been released to make it easier, and less costly, for masternode supporters to host their own nodes. Masternode hosting companies are free to utilize the phantom system as long as they comply with the terms of the Server Side Public License.
 
 # Quick start
 
@@ -59,14 +59,14 @@ That's it. You do not need to restart your masternodes, you don't need to change
 
 # Downloads
 
-* [Windows AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-windows-amd64.exe)
-* [Linux AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-amd64)
-* [OSX AMD64](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-darwin-amd64)
-* [ARMv7 Linux](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-arm)
-* [ARMv6 Pi](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv6)
-* [ARMv5 Pi](https://github.com/carsenk/phantom/releases/download/v0.0.4.2/phantom-linux-armv5)
+* [Windows AMD64](https://github.com/innova-foundation/phantom/releases/download/v0.0.4.2/phantom-windows-amd64.exe)
+* [Linux AMD64](https://github.com/innova-foundation/phantom/releases/download/v0.0.4.2/phantom-linux-amd64)
+* [OSX AMD64](https://github.com/innova-foundation/phantom/releases/download/v0.0.4.2/phantom-darwin-amd64)
+* [ARMv7 Linux](https://github.com/innova-foundation/phantom/releases/download/v0.0.4.2/phantom-linux-arm)
+* [ARMv6 Pi](https://github.com/innova-foundation/phantom/releases/download/v0.0.4.2/phantom-linux-armv6)
+* [ARMv5 Pi](https://github.com/innova-foundation/phantom/releases/download/v0.0.4.2/phantom-linux-armv5)
 
-# Setup 
+# Setup
 
 The setup is simple: copy your masternode.conf or fortunastake.conf, modify it slightly, launch the phantom executable.
 
@@ -95,17 +95,17 @@ comments removed, epoch timestamp added to the end.
 ## Run the phantom executable
 
 ```
-./phantom-linux-amd64 -magicbytes="b4eff2fa" -port=33369 -protocol_number=33500 -magic_message="Denarius Signed Message:" -bootstrap_url="https://denarius.pro" -max_connections=150 -bootstrap_ips="140.82.16.72:33369"
+./phantom-linux-amd64 -magicbytes="b73ff4fa" -port=14530 -protocol_number=33500 -magic_message="Innova Signed Message:" -bootstrap_url="https://innova.pro" -max_connections=150 -bootstrap_ips="140.82.16.72:14530"
 ```
 
 ## Coin configurations exist for
 
-* D (Denarius)
+* D (Innova)
 * $PAC
 * ANDS
-* BEET 
-* BITG 
-* CDM 
+* BEET
+* BITG
+* CDM
 * DEV
 * DKPC
 * FEIRM
@@ -173,7 +173,7 @@ There is a coinconf generator included that can auto-generate settings for most 
 ## Building (using Docker)
 
 ```
-docker run --rm -it -v "$PWD":/go/src/phantom -w /go/src/phantom golang:1.12.4 ./build.sh 
+docker run --rm -it -v "$PWD":/go/src/phantom -w /go/src/phantom golang:1.12.4 ./build.sh
 ```
 
 ## Donation Addresses

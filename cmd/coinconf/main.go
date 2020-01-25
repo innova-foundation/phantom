@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
-	"github.com/carsenk/phantom/pkg/phantom"
+	"github.com/innova-foundation/phantom/pkg/phantom"
 )
 
 var coinName string
