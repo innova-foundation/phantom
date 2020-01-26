@@ -20,6 +20,11 @@ Original Dev breakcrypto, modified by carsenk & CircuitBreaker
 
 ## Contact information
 
+* email: development@innovacoin.io
+* twitter: https://twitter.com/innovacoin
+* discord: CircuitBreaker#9827
+* Discord Chat: https://discord.gg/hp55tdg
+
 * email: admin@denarius.io
 * twitter: https://twitter.com/carsenjk
 * discord: Carsen#3333
@@ -100,7 +105,7 @@ comments removed, epoch timestamp added to the end.
 
 ## Coin configurations exist for
 
-* D (Innova)
+* INN (Innova)
 * $PAC
 * ANDS
 * BEET
@@ -188,3 +193,7 @@ DOGE: DBahutcjEAxfwQEW7kzft2y8dhZN2VtcG5
 carsenk:
 
 D: DMciTRDMZzcL48JoB1NJu5vhMkVuJLxhJe
+
+CircuitBreaker:
+
+INN: iQ9F85iF2Vo6vitE6DM2SgSxX57DuugAVc
